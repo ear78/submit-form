@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  line-height: 1;
+}
+
+.clearfix {
+  overflow: hidden;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background: lightgreen;
+  border: 1px solid #000;
+  float: left;
+  margin-left: 20px;
+}
+
+.red {
+  background: red;
+  transition: all .9s ease;
+}
+
+.contact-form {
+
+}
+
+.contact-form button {
+  background: orange;
+}
+
+.contact-form button:hover {
+  background: lightyellow;
+}
+
+.form-wrap {
+  background: #262626;
+}
+form {
+  padding: 50px;
+  color: #fff;
+}
+
+form p,
+form h2 {
+  padding: 10px;
+}
+
+.contact-form h2 {
+  text-transform: uppercase;
+}
+
+.hide-required-message {
+  display: none;
+}
+
+.show-required-message {
+  color: red;
+  display: block;
+}
+
+.contact-form input {
+  padding: 8px;
+  border: 1px solid #fff;
+  background: none;
+  border-radius: 2px;
+  color: #fff;
+}
+
+.contact-form input:focus {
+  outline: none;
+  border: 1px solid lightseagreen;
+}
+
+.contact-form .required-styles input {
+  transition: .5s all;
+  border: 2px solid red;
+  background-color: white;
+}
