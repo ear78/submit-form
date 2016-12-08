@@ -4,22 +4,65 @@
     <meta charset="utf-8">
     <title>Jquery Practice</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- RESET CSS STYLESHEET -->
     <link rel="stylesheet" href="./css/reset.css">
+
+    <!-- GOOGLE FONTS && FONT AWESOME CDN  -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300|Open+Sans:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--  ////////////////////////////////////-->
+
     <link rel="stylesheet" href="./css/main.css">
   </head>
   <body>
 
     <section class="form-wrap">
-      <form class="contact-form">
+      <form class="contact-form inner-wrap">
         <h2>Contact Us</h2>
-        <p><label>First Name: <input id="fname" type="text" class="required"/></lable></p>
-        <p><label>Last Name: <input id="lname" type="text" class="required"/></lable></p>
-        <p><label>Phone: <input type="text" class="required"/></lable></p>
-        <p><label>Email: <input id="email" type="email" class="required"/></lable></p>
-        <p class="required-message hide-required-message">Please fill out required fields.</p>
-        <p><button value="submit" type="submit">Submit Request</button></p>
-        <p>* Required</p>
+
+        <div class="top-info-box-container">
+          <div class="info-box">
+            <input id="fname" type="text" class="required"/>
+            <label>First Name </lable>
+          </div>
+          <div class="info-box">
+            <input id="lname" type="text" class="required"/>
+            <label>Last Name </lable>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <p>Phone *</p>
+            <input type="text" class="required"/>
+        </div>
+        <div class="info-box">
+          <p>Email *</p>
+          <input id="email" type="email" class="required"/>
+        </div>
+        <div class="required-message hide-required-message">
+          Please fill out required fields.
+        </div>
+        <div class="info-box">
+          <p>Message *</p>
+          <textarea name="name" rows="8" cols="80"></textarea>
+        </div>
+        <div class="footer">
+          <button class="hvr-sweep-to-top" value="submit" type="submit">Submit Request</button>
+        </div>
       </form>
+      <div class="social-container">
+        <div class="social-border">
+          <p>Designed By Elliot Richardon</p>
+          <div>
+            <i class="fa fa-facebook-f"></i>
+            <i class="fa fa-github"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-google-plus"></i>
+          </div>
+        </div>
+      </div>
     </section>
 
 
