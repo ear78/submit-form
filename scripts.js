@@ -12,7 +12,7 @@ $(document).ready(function(){
 
     for(var i = 0; i < $contactFormRequired.length; i++){
       var reqField = $contactFormRequired[i].val();
-      if(reqField === 0){
+      if(reqField.length === 0){
         event.preventDefault();
         $requiredMessage.removeClass("hide-required-message");
         $requiredMessage.addClass("show-required-message");
