@@ -79,17 +79,20 @@ form h2 {
 
 .hide-required-message {
   opacity: 0;
-  display: none;
+  /*display: none;*/
+  transition: opacity .3s ease;
 }
 
 .show-required-message {
   color: red;
   display: block;
   margin-top: 15px;
+  opacity: 1;
+  transition: opacity .9s ease;
 }
 
-.contact-form .required-styles input {
-  opacity: 1;
+.contact-form .required-styles input,
+.contact-form .required-styles textarea {
   border: 1px solid red;
   background-color: white;
   transition: .3s all ease;
